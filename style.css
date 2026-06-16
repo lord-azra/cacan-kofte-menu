@@ -1,21 +1,44 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    margin: 0;
-    padding: 20px;
+/* Genel Ayarlar */
+body { font-family: sans-serif; background-color: #121212; color: #fff; margin: 0; padding: 0; }
+header { text-align: center; padding: 20px; background: #000; }
+
+/* Sabit Navigasyon Bar */
+#category-nav {
     display: flex;
-    flex-direction: column;
+    overflow-x: auto;
+    background: #1e1e1e;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    gap: 10px;
+    border-bottom: 2px solid #ffcc00;
+}
+#category-nav a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #333;
+}
+
+/* Menü Kartları */
+#menu-container { padding: 20px; max-width: 600px; margin: auto; }
+section { margin-bottom: 40px; }
+h2 { color: #ffcc00; border-left: 4px solid #ffcc00; padding-left: 10px; }
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
 }
-
-header { text-align: center; margin-bottom: 20px; }
-
-#menu-container { width: 100%; max-width: 500px; }
-
-.product-card { 
-    border-bottom: 1px solid #333; 
-    padding: 15px 0; 
+.tag {
+    background: #ff4500;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
 }
-
-.product-card h3 { margin: 0 0 5px 0; color: #ffcc00; }
+.price { font-weight: bold; color: #ffcc00; }
