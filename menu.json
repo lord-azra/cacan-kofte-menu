@@ -53,7 +53,7 @@
       "title": "Büfe Tostları",
       "order": 5,
       "items": [
-        { "sku": "TOS001", "name": "Karışık Tost", "price": 80, "available": true },
+        { "sku": "TOS001", "name": "Karışık Tost", "price": 800, "available": true },
         { "sku": "TOS002", "name": "Kaşarlı Tost", "price": 70, "available": true },
         { "sku": "TOS003", "name": "Atom Tost", "price": 110, "available": true },
         { "sku": "TOS004", "name": "Mega Tost", "price": 120, "available": true },
