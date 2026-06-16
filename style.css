@@ -1,68 +1,132 @@
-/* Navigasyon */
+/* GENEL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #222;
+}
+
+h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #ffcc00;
+}
+
+/* NAV */
 #category-nav {
     display: flex;
-    gap: 10px;
-
     overflow-x: auto;
-    white-space: nowrap;
-
+    gap: 10px;
     padding: 10px;
-
     background: #121212;
-
     position: sticky;
     top: 0;
     z-index: 1000;
-
-    border-bottom: 1px solid #333;
-
-    scrollbar-width: none;
+    border-bottom: 1px solid #222;
 }
 
-#category-nav::-webkit-scrollbar {
-    display: none;
-}
-
-/* Linkler */
 .nav-link {
-    color: #888;
+    flex-shrink: 0;
     text-decoration: none;
-
-    font-size: 14px;
-
+    color: #aaa;
+    font-size: 13px;
     padding: 8px 12px;
-
     border: 1px solid #333;
     border-radius: 20px;
-
-    transition:
-        color .2s ease,
-        border-color .2s ease,
-        background-color .2s ease;
-
-    flex-shrink: 0;
+    transition: 0.2s;
 }
 
-/* Hover */
 .nav-link:hover {
     color: #ffcc00;
     border-color: #ffcc00;
 }
 
-/* Scroll Spy için */
+/* AKTİF NAV (Scroll Spy) */
 .nav-link.active {
-    color: #121212;
     background: #ffcc00;
+    color: #111;
     border-color: #ffcc00;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-/* Sticky navbar altında başlık kalmaması için */
-section {
-    scroll-margin-top: 70px;
+/* MAIN */
+#menu-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
 }
 
-/* Yumuşak kaydırma */
+/* KATEGORİ BAŞLIK */
+.category-title {
+    margin: 30px 0 15px;
+    font-size: 18px;
+    color: #ffcc00;
+    border-left: 4px solid #ffcc00;
+    padding-left: 10px;
+}
+
+/* ÜRÜN KART */
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5px;
+    border-bottom: 1px solid #222;
+}
+
+.product-name {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* TAG */
+.tag {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 10px;
+    background: #ffcc00;
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* FİYAT */
+.price {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* HATA MESAJI */
+.error-message {
+    text-align: center;
+    color: red;
+    padding: 20px;
+}
+
+/* SMOOTH SCROLL */
 html {
     scroll-behavior: smooth;
+}
+
+/* MOBİL OPTİMİZASYON */
+@media (max-width: 600px) {
+    #menu-container {
+        padding: 5px;
+    }
+
+    .product-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
 }
