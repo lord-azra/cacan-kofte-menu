@@ -1,0 +1,21 @@
+{
+  "restaurantInfo": {
+    "name": "ÇAÇAN KÖFTE & KUMRU",
+    "currency": "₺"
+  },
+  "categories": [
+    {
+      "id": "test",
+      "title": "Test Kategorisi",
+      "order": 1,
+      "items": [
+        {
+          "sku": "TEST01",
+          "name": "Test Ürün",
+          "price": "10",
+          "available": true
+        }
+      ]
+    }
+  ]
+}
