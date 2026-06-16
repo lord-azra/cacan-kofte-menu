@@ -1,5 +1,8 @@
 {
-  "restaurantInfo": { "name": "ÇAÇAN KÖFTE & KUMRU", "currency": "₺" },
+  "restaurantInfo": {
+    "name": "ÇAÇAN KÖFTE & KUMRU",
+    "currency": "₺"
+  },
   "categories": [
     {
       "id": "kofte",
